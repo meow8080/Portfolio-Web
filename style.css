@@ -1,0 +1,251 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#role::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+#role {
+  font-weight: 600;
+  color: #2563eb; /* blue accent */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f8fc;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;          /* white */
+  border-bottom: 1px solid #e5e7eb;   /* light gray */
+  z-index: 1000;
+}
+
+/* Align navbar with container */
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827; /* dark text */
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #374151; /* neutral gray */
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb; /* blue hover */
+}
+
+.container {
+    max-width: 1080px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #eaf2ff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+.section-title .icon {
+    font-size: 1.2rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: left;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.link{
+    background: white;
+    text-decoration: none;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-content: right;
+    margin-bottom: 15px;
+    border: 3px solid #450736;
+}
+
+.profile-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Say Hi button */
+.say-hi-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px; /* pill shape */
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover */
+.say-hi-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.35);
+}
+
+/* Click */
+.say-hi-btn:active {
+  transform: translateY(0);
+}
+
+.project-picture {
+    width: 260px;
+    height: 260px;
+}
+
+.header-content h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.about-content p {
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-right: 2%;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.project-thumbnail {
+    width: 100%;
+    aspect-ratio: 1 / 1;      /* square */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.project-card:hover .project-thumbnail {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.project-card p {
+    color: #374151;
+    font-size: 0.95rem;
+}
